@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="refresh" content="2; url=./" />
+    <title>页面不存在｜张建华</title>
+    <style>
+      body{font-family:system-ui,-apple-system,"Segoe UI",Arial,"PingFang SC","Microsoft YaHei",sans-serif;margin:0;display:grid;place-items:center;min-height:100vh;background:#0b1020;color:#fff}
+      .box{max-width:720px;padding:24px 18px}
+      a{color:#6ee7ff}
+      p{color:rgba(255,255,255,.75);line-height:1.7}
+      code{background:rgba(255,255,255,.08);padding:2px 6px;border-radius:8px}
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h1>页面不存在（404）</h1>
+      <p>2 秒后自动跳转到主页。如果没有跳转，请点击：<a href="./">返回主页</a></p>
+      <p>提示：本网站为单页展示页，建议从主页的导航进入各模块。</p>
+      <p>当前路径：<code id="p"></code></p>
+    </div>
+    <script>
+      document.getElementById("p").textContent = location.pathname + location.hash;
+    </script>
+  </body>
+</html>
+

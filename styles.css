@@ -1,5 +1,5 @@
 :root{
-  --font: "Noto Sans SC", system-ui, -apple-system, "Segoe UI", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  --font: system-ui, -apple-system, "Segoe UI", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   --bg: #0b1020;
   --surface: rgba(255,255,255,.06);
   --surface-2: rgba(255,255,255,.08);
@@ -31,6 +31,7 @@
 
 *{ box-sizing:border-box; }
 html,body{ height:100%; }
+html{ scroll-behavior: smooth; }
 body{
   margin:0;
   font-family: var(--font);
@@ -130,12 +131,18 @@ img{ max-width:100%; height:auto; display:block; }
   font-size: 13px;
   color: var(--muted);
   padding: 6px 8px;
+  border: 1px solid transparent;
   border-radius: 10px;
   transition: background .15s ease, color .15s ease;
 }
 .nav__menu a:hover{
   background: var(--surface-2);
   color: var(--text);
+}
+.nav__menu a.is-active{
+  background: color-mix(in srgb, var(--primary) 14%, var(--surface-2));
+  color: var(--text);
+  border: 1px solid color-mix(in srgb, var(--primary) 30%, var(--border));
 }
 
 .header__actions{
@@ -248,6 +255,9 @@ img{ max-width:100%; height:auto; display:block; }
 
 .section{
   padding: 44px 0;
+}
+.section[id]{
+  scroll-margin-top: 92px;
 }
 .section--alt{
   background: linear-gradient(180deg, transparent, color-mix(in srgb, var(--surface) 60%, transparent), transparent);
@@ -500,6 +510,35 @@ img{ max-width:100%; height:auto; display:block; }
   font-size: 12px;
 }
 
+.backtop{
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: color-mix(in srgb, var(--surface) 84%, transparent);
+  color: var(--text);
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  transform: translateY(8px);
+  pointer-events: none;
+  transition: opacity .16s ease, transform .16s ease;
+}
+.backtop.is-visible{
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.backtop:focus-visible{
+  outline: none;
+  box-shadow: var(--ring);
+}
+
 .footer{
   padding: 24px 0 10px;
 }
@@ -539,6 +578,14 @@ img{ max-width:100%; height:auto; display:block; }
   .nav{ position: relative; }
 }
 
+@media (prefers-reduced-motion: reduce){
+  html{ scroll-behavior: auto; }
+  *{
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 @media print{
   .header, .skip-link, .hero__cta, .btn, .nav, .toast{ display:none !important; }
   body{ background: #fff; color: #111; }
@@ -546,4 +593,3 @@ img{ max-width:100%; height:auto; display:block; }
   .section{ padding: 18px 0; }
   a{ text-decoration:none; }
 }
-

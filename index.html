@@ -4,18 +4,62 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#0b1020" />
     <title>张建华｜复合型项目经理（运营 × 数据 × 增长 × 落地）</title>
     <meta
       name="description"
       content="张建华，6年运营/项目经验，覆盖新能源充电桩、企业出海独立站、SEO/GEO、Google Ads、AI工具站与社媒矩阵增长。"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="canonical" href="https://erick-zzz.github.io/zhangjianhua/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta property="og:title" content="张建华｜复合型项目经理（运营 × 数据 × 增长 × 落地）" />
+    <meta property="og:description" content="新能源充电桩｜出海独立站｜SEO/GEO｜Google Ads｜AI工具站｜数据分析与项目落地" />
+    <meta property="og:url" content="https://erick-zzz.github.io/zhangjianhua/" />
+    <meta property="og:image" content="https://erick-zzz.github.io/zhangjianhua/og.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="张建华｜复合型项目经理" />
+    <meta name="twitter:description" content="运营 × 数据 × 增长 × 落地" />
+    <meta name="twitter:image" content="https://erick-zzz.github.io/zhangjianhua/og.jpg" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="favicon.svg" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <script>
+      (() => {
+        try {
+          const saved = localStorage.getItem("theme");
+          const preferred =
+            saved === "light" || saved === "dark"
+              ? saved
+              : window.matchMedia?.("(prefers-color-scheme: light)")?.matches
+                ? "light"
+                : "dark";
+          if (preferred === "light") document.documentElement.setAttribute("data-theme", "light");
+        } catch {}
+      })();
+    </script>
     <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "张建华",
+        "jobTitle": "复合型项目经理",
+        "url": "https://erick-zzz.github.io/zhangjianhua/",
+        "email": "mailto:zjh_fxh@163.com",
+        "knowsAbout": [
+          "项目管理",
+          "数据分析",
+          "SEO",
+          "Google Ads",
+          "独立站增长",
+          "新能源充电桩运营"
+        ]
+      }
+    </script>
   </head>
   <body>
     <a class="skip-link" href="#home">跳到主要内容</a>
@@ -35,8 +79,11 @@
             <a href="#about">简介</a>
             <a href="#capabilities">能力</a>
             <a href="#experience">经历</a>
+            <a href="#project-sites">项目站</a>
+            <a href="#education">教育</a>
             <a href="#projects">项目</a>
             <a href="#results">成果</a>
+            <a href="#skills">技能</a>
             <a href="#works">作品</a>
             <a href="#highlights">亮点</a>
             <a href="#contact">联系</a>
@@ -47,7 +94,7 @@
           <button class="btn btn--ghost" type="button" id="themeToggle" aria-label="切换主题">
             <span id="themeLabel">浅色</span>
           </button>
-          <a class="btn btn--primary" href="项目经理-张建华.docx" download>下载简历</a>
+          <a class="btn btn--primary" href="resume.docx" download>下载简历</a>
         </div>
       </div>
     </header>
@@ -228,6 +275,80 @@
         </div>
       </section>
 
+      <section class="section" id="project-sites">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">真实项目（可点击查看）</h2>
+            <p class="section__subtitle">3 个可在线访问的作品：产品页 + 简历亮点 + 我的贡献。</p>
+          </div>
+
+          <div class="grid grid--3">
+            <article class="card">
+              <div class="card__kicker">对比工具｜多语言｜内容增长</div>
+              <h3 class="card__title">SEARateGuide</h3>
+              <p class="card__text">
+                东南亚汇款路线对比工具：对比费率/费用/到账方式与预估到账金额，并提供博客与渠道指南。
+              </p>
+              <div class="card__actions">
+                <a class="btn btn--primary btn--sm" href="projects/searateguide.html">查看项目亮点</a>
+                <a class="btn btn--ghost btn--sm" href="https://searateguide.com/" target="_blank" rel="noreferrer">访问网站</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card__kicker">AI 工具站｜内容聚合｜SEO</div>
+              <h3 class="card__title">AIMEGApro</h3>
+              <p class="card__text">
+                AI 图像扩展/生成式填充工具与工具目录：内容聚合 + 评测体系 + 多语言落地页，构建自然增长资产。
+              </p>
+              <div class="card__actions">
+                <a class="btn btn--primary btn--sm" href="projects/aimegapro.html">查看项目亮点</a>
+                <a class="btn btn--ghost btn--sm" href="https://www.aimegapro.com/" target="_blank" rel="noreferrer">访问网站</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card__kicker">优惠券站｜SEO 内容体系｜站点健康</div>
+              <h3 class="card__title">CouponMega</h3>
+              <p class="card__text">
+                面向海外用户的优惠券内容站：搭建 SEO 内容生产机制、扩充商业内容结构，并持续治理索引与收录。
+              </p>
+              <div class="card__actions">
+                <a class="btn btn--primary btn--sm" href="projects/couponmega.html">查看项目亮点</a>
+                <a class="btn btn--ghost btn--sm" href="https://couponmega.com/" target="_blank" rel="noreferrer">访问网站</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="education">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">教育与认证</h2>
+            <p class="section__subtitle">用长期学习补足能力半径，用认证证明可交付。</p>
+          </div>
+
+          <div class="grid grid--2">
+            <div class="card">
+              <h3 class="card__title">教育背景</h3>
+              <ul class="bullets">
+                <li>苏州科技大学｜本科｜计算机科学与技术｜2024.03–2026.07</li>
+                <li>天津渤海职业技术学院｜专科｜机械制造及其自动化｜2016.09–2019.06</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3 class="card__title">认证与能力补充</h3>
+              <ul class="bullets">
+                <li>高级人工智能训练师（2025）</li>
+                <li>数据表达：PPT 分析报告、Xmind 梳理与项目复盘沉淀</li>
+                <li>工具能力：Excel 数据透视表、VLOOKUP 等函数应用</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="section section--alt" id="projects">
         <div class="container">
           <div class="section__head">
@@ -335,8 +456,15 @@
               <h3 class="card__title">年终总结图（可放大查看）</h3>
               <p class="card__text">用于面试快速对齐：SEO 计划、广告投放复盘、社媒矩阵数据、AI 工具站运营要点。</p>
               <div class="image-frame">
-                <a href="年终总结-ZJH-20260209160832.jpg" target="_blank" rel="noreferrer">
-                  <img src="年终总结-ZJH-20260209160832_small.jpg" alt="年终总结思维导图预览" loading="lazy" />
+                <a href="year_end.jpg" target="_blank" rel="noreferrer">
+                  <img
+                    src="year_end_preview.jpg"
+                    alt="年终总结思维导图预览（点击放大）"
+                    loading="lazy"
+                    decoding="async"
+                    width="1800"
+                    height="2188"
+                  />
                 </a>
               </div>
             </article>
@@ -391,7 +519,7 @@
             </article>
 
             <article class="card">
-              <h3 class="card__title">CouponMega：出海独立站 SEO 内容体系</h3>
+              <h3 class="card__title">CouponMega：SEO 内容体系与结构化增长</h3>
               <p class="card__text">
                 从结构到机制：内容规划、质量标准、持续产能与站点健康治理，沉淀可复用的 SEO 运作方式。
               </p>
@@ -399,6 +527,10 @@
                 <span class="pill">SEO</span>
                 <span class="pill">内容增长</span>
                 <span class="pill">站点健康</span>
+              </div>
+              <div class="card__actions">
+                <a class="btn btn--primary btn--sm" href="projects/couponmega.html">查看详情</a>
+                <a class="btn btn--ghost btn--sm" href="https://couponmega.com/" target="_blank" rel="noreferrer">访问网站</a>
               </div>
             </article>
 
@@ -412,17 +544,25 @@
                 <span class="pill">SEO</span>
                 <span class="pill">MVP 验证</span>
               </div>
+              <div class="card__actions">
+                <a class="btn btn--primary btn--sm" href="projects/aimegapro.html">查看详情</a>
+                <a class="btn btn--ghost btn--sm" href="https://www.aimegapro.com/" target="_blank" rel="noreferrer">访问网站</a>
+              </div>
             </article>
 
             <article class="card">
-              <h3 class="card__title">社媒矩阵：内容分发与增长复盘</h3>
+              <h3 class="card__title">SEARateGuide：对比工具 + 内容指南闭环</h3>
               <p class="card__text">
-                多平台数据打通与复盘：明确“平台定位—内容主题—产能节奏—指标目标”，持续迭代增长策略。
+                产品化对比工具承接需求，博客与渠道指南教育用户，形成“工具获客 + 内容沉淀”的增长飞轮。
               </p>
               <div class="card__footer">
-                <span class="pill">社媒增长</span>
-                <span class="pill">数据复盘</span>
-                <span class="pill">内容体系</span>
+                <span class="pill">产品化工具</span>
+                <span class="pill">多语言</span>
+                <span class="pill">内容闭环</span>
+              </div>
+              <div class="card__actions">
+                <a class="btn btn--primary btn--sm" href="projects/searateguide.html">查看详情</a>
+                <a class="btn btn--ghost btn--sm" href="https://searateguide.com/" target="_blank" rel="noreferrer">访问网站</a>
               </div>
             </article>
           </div>
@@ -501,7 +641,7 @@
                 <div class="contact-item">
                   <div class="contact-item__k">简历</div>
                   <div class="contact-item__v">
-                    <a class="linklike" href="项目经理-张建华.docx" download>下载 .docx</a>
+                    <a class="linklike" href="resume.docx" download>下载 .docx</a>
                   </div>
                 </div>
               </div>
@@ -515,9 +655,10 @@
                 <li>SEO 内容 SOP（选题-生产-质检-发布-复盘）</li>
                 <li>GSC/投放复盘框架（CTR/排名/成本/转化路径）</li>
                 <li>项目里程碑模板（排期、风险、验收口径）</li>
+                <li><a class="linklike" href="resume_project_highlights.md" target="_blank" rel="noreferrer">简历项目亮点（可直接复制粘贴）</a></li>
               </ul>
               <div class="card__actions">
-                <a class="btn btn--primary btn--sm" href="年终总结-ZJH-20260209160832.jpg" target="_blank" rel="noreferrer">
+                <a class="btn btn--primary btn--sm" href="year_end.jpg" target="_blank" rel="noreferrer">
                   打开年终总结图
                 </a>
                 <button class="btn btn--ghost btn--sm" type="button" id="printBtn">打印为 PDF</button>
@@ -535,7 +676,7 @@
       </section>
     </main>
 
-    <script src="main.js"></script>
+    <button class="backtop" type="button" id="backToTop" aria-label="返回顶部">↑</button>
+    <script src="main.js" defer></script>
   </body>
 </html>
-
