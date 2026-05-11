@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://erick-zzz.github.io/zhangjianhua/sitemap.xml
+
